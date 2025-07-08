@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Disable body scroll */
+  background-color: #0e0e0e;
+  color: #f5f5f5;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  min-height: 120vh; /* Instead of 100vh, gives more scroll */
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem; /* More breathing room */
+  text-align: center;
+  transition: background-color 1s ease;
+}
+
+
+h1, h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.whisper {
+  font-style: italic;
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Section background themes */
+.intro {
+  background: linear-gradient(145deg, #1c1c1c, #2a2a2a);
+}
+
+.idealization {
+  background: linear-gradient(145deg, #2f1e3c, #513362);
+  color: #e4d7f5;
+}
+
+.devaluation {
+  background: linear-gradient(145deg, #2d2d2d, #1a1a1a);
+  color: #c9c9c9;
+}
+
+.gaslighting {
+  background: radial-gradient(circle, #1a1a1a, #000000);
+  color: #aaa;
+}
+
+.discard {
+  background-color: #111;
+  color: #666;
+}
+
+.reflection {
+  background: linear-gradient(145deg, #1a1a1a, #263238);
+  color: #c5e1a5;
+}
