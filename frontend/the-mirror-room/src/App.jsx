@@ -1,4 +1,6 @@
 import './App.css';
+import RealMe from './pages/RealMe';
+import QuoteRoom from './pages/QuoteRoom';
 import { Routes, Route, Link } from 'react-router-dom'
 import Idealization from './pages/Idealization'
 import Devaluation from './pages/Devaluation'
@@ -48,6 +50,13 @@ function App() {
         <p>“You are still real. You are not what they did to you. You survived.”</p>
         <Link to="/Reflection" className="btn">self conciousness</Link>
       </section>
+          
+      <section className="section outro">
+  <h2>Still Lost?</h2>
+  <p>Sometimes the answers come from silence,or even real experiences...</p>
+  <Link to="/quote-room" className="btn">🌙 Visit Lumière's Room</Link>
+   <Link to="/real-me" className="btn">💎 See The Real Me</Link>
+</section>
 
             {/* You can continue with Discard + Reflection sections here if you want */}
           </main>
@@ -59,10 +68,16 @@ function App() {
       <Route path="/gaslighting" element={<Gaslighting />} />
       <Route path="/Discard" element={<Discard />} />
       <Route path="/Reflection" element={<Reflection />} />
+      <Route path="/quote-room" element={<QuoteRoom />} />
+      <Route path="/real-me" element={<RealMe />} />
 
-      {/* Add other routes when ready */}
+
+      {/* Add other routes when they are ready */}
     </Routes>
+
   )
+  
+
 }
 
 export default App

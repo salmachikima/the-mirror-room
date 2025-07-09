@@ -145,3 +145,15 @@ p {
   background: rgba(255, 255, 255, 0.3);
   color: #000;
 }
+
+/*lumière's room*/
+.quote {
+  margin-top: 2rem;
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #ccc;
+  max-width: 600px;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-left: 2px solid #555;
+}
