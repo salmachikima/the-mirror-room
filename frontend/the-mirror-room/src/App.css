@@ -157,3 +157,43 @@ p {
   padding: 1rem 2rem;
   border-left: 2px solid #555;
 }
+
+/* General styles for all sections */
+.section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255); /* or your preferred text color */
+  padding: 100px 20px;
+  min-height: 100vh;
+}
+
+.reflection {
+  background-image: url('/images/chess.jpg');
+  color: rgb(153, 165, 44);
+}
+.intro {
+  color: rgb(65, 241, 247);
+  background-image: url('/images/chess\ mirror\ guy.jpg');
+}
+.outro {
+  background-image: url('/images/lotus\ open.png');
+  color: rgb(5, 47, 75);
+}
+.idealization {
+  background-image: url('/images/chess.jpg');
+  color: rgb(153, 165, 44);
+}
+
+.devaluation {
+  background-image: url('/images/gaslighting\ 3.jpg');
+  color: rgb(201, 201, 201);
+}
+
+.gaslighting {
+  background-image: url('/images/gaslighting\ 3.jpg');
+}
+
+.discard {
+  background-image: url('/images/gaslighting\ 3.jpg');
+}

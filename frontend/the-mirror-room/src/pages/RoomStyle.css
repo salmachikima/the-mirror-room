@@ -1,0 +1,48 @@
+.room {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Overlay to make text readable */
+.room::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  z-index: 0;
+}
+
+.room .content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Specific backgrounds */
+.idealization-room {
+  background-image: url('/images/chess.jpg');
+}
+
+.devaluation-room {
+  background-image: url('/images/devaluation-wallpaper.jpg');
+}
+
+.gaslighting-room {
+  background-image: url('/images/gaslighting-wallpaper.jpg');
+}
+
+.discard-room {
+  background-image: url('/images/discard-wallpaper.jpg');
+}
+
+.reflection-room {
+  background-image: url('/images/lotus-forest.jpg');
+}

@@ -5,11 +5,16 @@ function QuoteRoom() {
   const [quotes, setQuotes] = useState([]);
   const [quote, setQuote] = useState('');
 
-  useEffect(() => {
-    fetch('http://localhost:5000/api/quotes')
-      .then(res => res.json())
-      .then(data => setQuotes(data));
-  }, []);
+useEffect(() => {
+  fetch('http://localhost:5000/api/quotes')
+    .then(res => res.json())
+    .then(data => {
+      console.log("Fetched quotes:", data); // 👈 check if quotes come
+      setQuotes(data);
+    })
+    .catch(err => console.error("Fetch error:", err));
+}, []);
+
 
   function generateQuote() {
     const random = Math.floor(Math.random() * quotes.length);
